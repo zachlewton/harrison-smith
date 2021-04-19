@@ -10,10 +10,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/blog`,
+        name: `markdown-pages`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/data`,
+    //     name: `data`,
+    //   },
+    // },
     `gatsby-transformer-remark`,
   ],
 }
