@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: zachlewton/harrison-smith
+  branch: master
 
 media_folder: static/assets
 public_folder: assets
