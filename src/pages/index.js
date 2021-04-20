@@ -9,7 +9,7 @@ export default function Home({ data }, props) {
     <Layout>
       <AlbumsContainer>
         {data.allMarkdownRemark.nodes.map(album => (
-          <a href={album.frontmatter.url}>
+          <a href={album.frontmatter.url} target="_blank">
             <Img
               style={{ width: "100%" }}
               fluid={album.frontmatter.album_art.childImageSharp.fluid}
