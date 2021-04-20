@@ -23,13 +23,17 @@ export default function Home({ data }, props) {
 }
 
 const AlbumsContainer = styled.div`
-  background-color: white;
+  width: 100%;
+
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 5px 50px 0 50px;
+  padding: 0 10px 10px 10px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+
+  @media (max-width: 950px) {
+  }
 `
 
 export const HomepageQuery = graphql`
@@ -39,7 +43,7 @@ export const HomepageQuery = graphql`
         frontmatter {
           album_art {
             childImageSharp {
-              fluid(maxWidth: 500, quality: 100) {
+              fluid(maxWidth: 700, quality: 100) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
               }

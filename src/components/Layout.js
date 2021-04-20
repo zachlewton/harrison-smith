@@ -33,27 +33,33 @@ const Layout = ({ children }) => {
 }
 
 const NavContainer = styled.div`
-  flex-basis: 33%;
-  background-color: red;
+  width: 30%;
+  padding-left: 5px;
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `
 const ContentContainer = styled.div`
-  flex-basis: 77%;
-  background-color: blue;
+  width: 70%;
+
   height: 100vh;
-  overflow: auto;
-  overflow-x: none;
+  padding-top: 5px;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `
 
 const Name = styled.h1`
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
 `
 const Email = styled.div`
-  font-size: 1.5rem;
+  font-size: 1rem;
 `
 
 const Dob = styled.div`
-  font-size: 1.5rem;
+  font-size: 1rem;
 `
 
 const RootWrapper = styled.div`
@@ -61,8 +67,11 @@ const RootWrapper = styled.div`
   margin: 0;
   display: flex;
 
-  min-height: 100vh;
-  min-width: 100vw;
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+
+  /* min-height: 100vh; */
 `
 
 export default Layout
