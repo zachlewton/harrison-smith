@@ -1,6 +1,6 @@
 ---
-title: other test
+title: test 1
 artist: test artist
-url: https://turtlenecked.bandcamp.com/album/kapow
+url: google.com
 role: mixing
 ---
