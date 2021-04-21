@@ -51,7 +51,11 @@ const UrlLink = styled.a`
 
 const WorkCard = styled.div`
   width: 100%;
-  padding: 10px 10px 10px 40%;
+  padding: 10px 10px 10px 30%;
+
+  @media (max-width: 950px) {
+    padding: 10px 10px 10px 45%;
+  }
 `
 
 export const WorksQuery = graphql`

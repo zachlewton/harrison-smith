@@ -3,11 +3,39 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import Nav from "../components/Nav"
 import { useLocation } from "@reach/router"
+import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
   const location = useLocation()
+
+  const siteMetadata = {
+    title: `Harrison Patrick Smith Music`,
+    url: `https://www.harrisonpatricksmith.com/`,
+    image: "static/icon.png",
+    author: "zach lewton",
+    description: `Website for Harrison Patrick Smith's music`,
+  }
+
   return (
     <RootWrapper>
+      <Helmet>
+        <title>{siteMetadata.title}</title>
+        <meta name="description" content={siteMetadata.description} />
+
+        <meta
+          name="keywords"
+          content="Harrison Patrick Smith, music, turtlenecked, musician, rock, rock and roll, weezer"
+        />
+        <meta http-equiv="content-language" content="en-us" />
+        <meta name="og:title" content={siteMetadata.title} />
+        <meta name="og:type" content="website" />
+        <meta name="og:description" content={siteMetadata.description} />
+        <meta name="og:image" content={siteMetadata.image} />
+        <meta name="og:locale" content="en" />
+        <meta name="og:url" content={siteMetadata.url} />
+        <link rel="canonical" content={siteMetadata.url} />
+      </Helmet>
+
       <NavContainer>
         <Name>Harrison Smith</Name>
         <Email>harrisonpatricksmith96@gmail.com</Email>

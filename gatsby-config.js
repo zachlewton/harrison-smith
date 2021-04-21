@@ -64,13 +64,13 @@ const myCustomQueries = {
 }
 
 module.exports = {
-  // siteMetadata: {
-  //   title: `Zach Lewton Web Dev`,
-  //   url: `https://www.zachlewton.dev/`,
-  //   image: "static/images/icon.png",
-  //   author: "zach lewton",
-  //   description: `Website for Zach Lewton Web Development services and music`,
-  // },
+  siteMetadata: {
+    title: `Harrison Patrick Smith`,
+    url: `https://www.harrisonpatricksmith.com/`,
+    image: "static/icon.png",
+    author: "zach lewton",
+    description: `Website for Harrison Patrick Smith's Music`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -141,22 +141,21 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Zach Lewton Web Development`,
-    //     title: `Zach Lewton Web Development`,
-    //     short_name: `ZachLewtonDev`,
-    //     start_url: `/`,
-    //     background_color: `#5b3e29`,
-    //     theme_color: `#fdf5e6`,
-    //     lang: `en`,
-    //     description: `Website for Zach Lewton Web Development services and music`,
-    //     display: `standalone`,
-    //     icon: `static/images/icon.png`, // This path is relative to the root of the site.
-    //     crossOrigin: `use-credentials`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Harrison Patrick Smith`,
+        title: `Harrison Patrick Smith Music`,
+        short_name: `HarrisonSmithMusic`,
+        start_url: `/`,
+
+        lang: `en`,
+        description: `Website for Harrison Patrick Smith's music`,
+        display: `standalone`,
+        icon: `static/icon.png`, // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
