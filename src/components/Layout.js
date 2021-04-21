@@ -79,15 +79,15 @@ const ContentContainer = styled.div`
 `
 
 const Name = styled.h1`
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
 `
 const Email = styled.div`
-  font-size: 1rem;
+  font-size: 0.75rem;
 `
 
 const Dob = styled.div`
-  font-size: 1rem;
+  font-size: 0.75rem;
 `
 
 const RootWrapper = styled.div`
