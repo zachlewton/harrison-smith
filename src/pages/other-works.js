@@ -31,7 +31,13 @@ export default function OtherWorks({ data }, props) {
   )
 }
 
-const WorkContainer = styled.div``
+const WorkContainer = styled.div`
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding-top: 20px;
+  padding-bottom: 10px;
+`
 
 const Title = styled.h2`
   font-size: 1.5rem;
@@ -51,10 +57,14 @@ const UrlLink = styled.a`
 
 const WorkCard = styled.div`
   width: 100%;
-  padding: 10px 10px 10px 30%;
+  padding: 10px 10px 10px 25%;
 
   @media (max-width: 950px) {
     padding: 10px 10px 10px 45%;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
   }
 `
 
